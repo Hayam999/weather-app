@@ -2,6 +2,12 @@
 
 <p align="center"
 style="margin-top:64px;">
+<img src="./weather-app-night.png">
+<br>
+</p>
+
+<p align="center"
+style="margin-top:64px;">
 <img src="./weather-app.png">
 <br>
 </p>
