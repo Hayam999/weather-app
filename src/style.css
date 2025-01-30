@@ -1,0 +1,515 @@
+/*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.15; /* 1. Correct the line height in all browsers. */
+  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+  tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+}
+
+/*
+Sections
+========
+*/
+
+body {
+  margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct font weight in Chrome and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+    monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+Correct table border color inheritance in Chrome and Safari. (https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+  border-color: currentcolor;
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+	Additional Code 
+*/
+
+:root {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+  margin: 0;
+}
+
+ol[role="list"],
+ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+[data-style="clear-day"],
+[data-style="partly-cloudy-day"] {
+  --bg-gradient: linear-gradient(180deg, #cfecfd 0%, #61c0f8 80%);
+  --bg: #61c0f8;
+  --text: #243742;
+  --secondary-bg: #51ace1;
+  --secondary-text: #ffffff;
+  --tertiary-bg: #eaf7fe;
+}
+
+[data-style="cloudy"],
+[data-style="wind"],
+[data-style="fog"] {
+  --bg-gradient: linear-gradient(180deg, #e0e8ec 0%, #94b3c5 80%);
+  --bg: #94b3c6;
+  --text: #243742;
+  --secondary-bg: #77a4c0;
+  --secondary-text: #ffffff;
+  --tertiary-bg: #f6f8f9;
+}
+
+[data-style="rain"] {
+  --bg-gradient: linear-gradient(180deg, #d2dde4 0%, #649fc1 80%);
+  --bg: #659fc1;
+  --text: #243742;
+  --secondary-bg: #4586ae;
+  --secondary-text: #ffffff;
+  --tertiary-bg: #eff3f5;
+}
+
+[data-style="snow"] {
+  --bg-gradient: linear-gradient(180deg, #fff 0%, #dfe4e8 80%);
+  --bg: #dfe5e8;
+  --text: #243742;
+  --secondary-bg: #a5b1b9;
+  --secondary-text: #ffffff;
+  --tertiary-bg: #eff3f5;
+}
+
+[data-style="partly-cloudy-night"],
+[data-style="clear-night"] {
+  --bg-gradient: linear-gradient(180deg, #a896c8 0%, #523783 80%);
+  --bg: #523783;
+  --text: #d9d0ea;
+  --secondary-bg: #6d4da8;
+  --secondary-text: #ffffff;
+  --tertiary-bg: #322449;
+}
+
+body {
+  background: var(--bg-gradient, #61c0f8);
+  min-height: 100svh;
+  position: relative;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 800px;
+
+  margin: 0 auto;
+  padding: 2rem 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+
+  color: var(--text, #243742);
+}
+
+.search-box {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+.unit-wrapper {
+  background-color: var(--tertiary-bg, #243742);
+  display: flex;
+  border-radius: 20px;
+}
+
+.unit-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+.unit-selector,
+.search-box button {
+  cursor: pointer;
+}
+
+.unit-selected {
+  background-color: var(--secondary-bg, #51ace1);
+  color: var(--secondary-text, #ffffff);
+}
+
+.search-box input {
+  flex: 1;
+  flex-shrink: 1;
+  min-width: 0;
+  background-color: var(--tertiary-bg, #243742);
+  border: none;
+  border-radius: 20px;
+  padding: 0 1rem;
+  color: var(--text, #243842);
+}
+
+.search-box input::placeholder {
+  color: var(--text, #243842);
+  opacity: 0.5;
+}
+
+.search-box input:focus {
+  outline: 1px solid var(--secondary-bg, #51ace1);
+}
+
+.search-box button {
+  flex-shrink: 0;
+  background-color: var(--secondary-bg, #51ace1);
+  color: var(--secondary-text, #ffffff);
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.search-box button:first-of-type {
+  margin-left: -48px;
+}
+
+.search-box button svg {
+  fill: var(--secondary-text, #ffffff);
+  width: 80%;
+  height: 80%;
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.location {
+  font-weight: 200;
+}
+
+.current-situation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: inherit;
+}
+
+.current-icon {
+  max-width: 40%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.current-conditions {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.current-conditions .temp {
+  font-size: 5rem;
+  line-height: 0.9;
+}
+
+.current-conditions .temp span {
+  font-size: 0.5em;
+}
+
+.conditions-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  font-weight: 200;
+}
+
+.future-conditions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  width: 100%;
+
+  padding: 0 1rem;
+
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.future-conditions::-webkit-scrollbar {
+  display: none;
+}
+
+.future-day {
+  background-color: var(--secondary-bg, #51ace1);
+  color: var(--secondary-text, #ffffff);
+
+  min-width: 150px;
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 1rem;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.future-icon {
+  width: 70%;
+}
+
+.future-day .temp,
+.future-day .conditions {
+  font-size: 0.75rem;
+}
+
+.error-message {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 400px;
+  max-width: 80%;
+
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+
+  background-color: #fff2c3;
+  color: #85743a;
+  border: 1px solid #bda44c;
+  opacity: 1;
+
+  transition: 1s;
+}
+
+.hidden {
+  opacity: 0;
+  transition: 1s;
+}
+
+@media only screen and (min-width: 750px) {
+  .current-situation {
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: flex-end; */
+  }
+
+  .future-conditions {
+    margin-top: 0;
+  }
+}
