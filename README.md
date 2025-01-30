@@ -1,5 +1,11 @@
 # Weather Web Application
 
+<p align="center"
+style="margin-top:64px;">
+<img src="./weather-app.png">
+<br>
+</p>
+
 ## Description
 
 A modern, dynamic weather app built with vanilla Js, Css and HTML5.
